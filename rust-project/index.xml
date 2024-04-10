@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rust项目工程 on 手册</title><link>https://www.panwenbin.com/cookbook/rust-project/</link><description>Recent content in Rust项目工程 on 手册</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 11 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://www.panwenbin.com/cookbook/rust-project/index.xml" rel="self" type="application/rss+xml"/><item><title>交叉编译</title><link>https://www.panwenbin.com/cookbook/rust-project/cross-compile/</link><pubDate>Thu, 11 Apr 2024 00:00:00 +0800</pubDate><guid>https://www.panwenbin.com/cookbook/rust-project/cross-compile/</guid><description> 交叉编译 # 就是添加相应的target, 然后使用相应的工具链进行编译。
+添加target # 比如我在debian上，添加windows的target
+rustup target add x86_64-pc-windows-gnu 有哪些target可以添加，可以查看 https://doc.rust-lang.org/nightly/rustc/platform-support.html
+编译到target # cargo build --release --target=x86_64-pc-windows-gnu 报错 # error: linker x86_64-w64-mingw32-gcc not found
+sudo apt-get install gcc-mingw-w64</description></item></channel></rss>
